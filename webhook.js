@@ -5,6 +5,7 @@ const server = createServer((req, res) => {
   if (method.toUpperCase() === 'POST' && url === '/webhook') {
     res.setHeader('Content-Type', 'application/json');
     res.end(JSON.stringify({ ok: true }));
+    console.log('hello webhook');
   } else {
     res.end('Not Found！！！');
   }
