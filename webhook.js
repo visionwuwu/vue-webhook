@@ -12,6 +12,6 @@ const server = createServer((req, res) => {
   }
 });
 
-server.listen(5005, () => {
-  console.log('server is running 5005 port');
+server.listen(5000, () => {
+  console.log('server is running 5000 port');
 });
