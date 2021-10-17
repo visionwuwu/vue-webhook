@@ -1,5 +1,5 @@
 #!/bin/bash
-WORK_PATH='/user/projects/vue-back'
+WORK_PATH='/root/user/projects/vue-back'
 cd $WORK_PATH
 echo '先清除老的代码'
 # 回退历史区域回到暂存区
