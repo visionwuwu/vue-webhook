@@ -25,7 +25,7 @@ const server = createServer((req, res) => {
       const event = req.headers['x-github-event'] //event=xxx
       const signature = req.headers['x-hub-signature'] //拿到签名的密钥
       // git触发push事件，或者密钥不正确
-      if (sign(JSON.stringify(body)) !== signature) {
+      if (sign(body) !== signature) {
         return res.end('Not Allow！！！');
       }
       // 所有的验证都成功了接下来就是CI、CD的流程，在使用docker进行部署
