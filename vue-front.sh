@@ -20,4 +20,4 @@ docker rm vue-front-container
 echo '启动新容器'
 # 容器是单独的服务器 80:80端口映射将我的服务器的80端口映射到容器的80端口
 # 下面无非就是一个启动docker容器的命令
-docker container run -p 8080:8080 --name vue-front-container -d vue-front:1.0
+docker container run -p 80:80 --name vue-front-container -d vue-front:1.0
